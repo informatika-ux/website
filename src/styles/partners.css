@@ -1,0 +1,71 @@
+/* Partners Section */
+.partners-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Main container with header and description */
+.partners-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partners-container h2 {
+    font-size: 2em;
+    color: #2dbd2d;
+    margin-bottom: 10px;
+}
+
+.partners-container p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* Grid container for partner items */
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual container for each partner item */
+.partner-item-container {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+    width: 200px; /* Adjusted width for each partner item container */
+}
+
+.partner-item-container:hover {
+    transform: scale(1.03);
+}
+
+/* Partner item styling */
+.partner-item {
+    text-align: center;
+}
+
+.partner-item img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Make sure height matches width for a perfect circle */
+    margin-bottom: 10px;
+}
+
+.partner-item h3 {
+    font-size: 1em;
+    color: #2dbd2d;
+    margin: 5px 0;
+}
+
+.partner-item p {
+    font-size: 0.9em;
+    color: #b0b0b0;
+}

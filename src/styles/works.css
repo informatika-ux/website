@@ -1,0 +1,240 @@
+/* Works Container */
+.works-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 2200px; /* Significantly wider container */
+    margin: 30px auto;
+    text-align: center;
+}
+
+.works-container h2 {
+    font-size: 3em; /* Increase the title size */
+    color: #2dbd2d;
+    margin-bottom: 10px;
+}
+
+.works-container p {
+    font-size: 1.5em; /* Increase description font size */
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+/* Work Items Grid */
+.work-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+/* Individual Work Item */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    gap: 15px;
+    max-width: 1100px; /* Even wider work items */
+    width: 100%;
+}
+
+.work-item img {
+    width: 100%; /* Maximize image size */
+    height: auto;
+    object-fit: cover; /* Ensure the image fits nicely */
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.work-info h3 {
+    font-size: 2.5em; /* Increase title size */
+    color: #2dbd2d;
+    margin-bottom: 10px;
+}
+
+.work-info p {
+    font-size: 1.2em; /* Larger description text */
+    color: #e0e0e0;
+}
+
+.work-item:hover {
+    transform: scale(1.06); /* Larger scale effect on hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+.work-item:hover img {
+    transform: none; /* Keep the image static on hover */
+}
+
+/* Gallery Section */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    width: 100%; /* The track spans the full width */
+}
+
+.carousel-track img {
+    width: 100%; /* Ensure images take full width */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    display: block;
+    object-fit: cover; /* Fit images perfectly without distortion */
+}
+
+.gallery {
+    position: relative;
+    overflow: hidden; /* Only one image visible at a time */
+    width: 100%; /* Ensure gallery takes full width */
+    max-width: 1000px; /* Adjust width */
+    margin: 0 auto; /* Center gallery */
+}
+
+/* Gallery Buttons */
+.gallery button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; /* Remove background color */
+    color: white; /* Simplify the color */
+    border: none; /* Remove the border */
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0; /* Remove padding */
+}
+
+.gallery .prev {
+    left: 10px;
+}
+
+.gallery .next {
+    right: 10px;
+}
+
+.gallery button:hover {
+    color: gray; 
+    background: none; 
+}
+
+
+@media (max-width: 1024px) {
+    .works-container {
+        padding: 20px; 
+    }
+
+    .work-items {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .work-item {
+        max-width: 100%; 
+    }
+
+    .work-info h3 {
+        font-size: 2.2em; 
+    }
+
+    .work-info p {
+        font-size: 1.1em; 
+    }
+
+    .gallery {
+        max-width: 100%; 
+    }
+
+    .carousel-track img {
+        max-width: 100%; 
+    }
+
+    .gallery button {
+        font-size: 1.8rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .works-container h2 {
+        font-size: 2em; 
+    }
+
+    .works-container p {
+        font-size: 1.2em;
+    }
+
+    .work-item {
+        padding: 15px; 
+    }
+
+    .work-info h3 {
+        font-size: 1.8em; 
+    }
+
+    .work-info p {
+        font-size: 1em; 
+    }
+
+    .gallery {
+        width: 100%; 
+    }
+
+    .carousel-track img {
+        max-width: 100%;
+    }
+
+    .gallery button {
+        font-size: 1.6rem; 
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .gallery .prev {
+        left: 5px; 
+    }
+
+    .gallery .next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .works-container h2 {
+        font-size: 1.2em; 
+    }
+
+    .works-container p {
+        font-size: 1em; 
+    }
+
+    .work-item {
+        padding: 10px; 
+    }
+
+    .work-info h3 {
+        font-size: 1.6em; 
+    }
+
+    .work-info p {
+        font-size: 0.9em; 
+    }
+
+    .gallery button {
+        font-size: 1.4rem; 
+        width: 25px; 
+        height: 25px; 
+    }
+
+    .gallery .prev {
+        left: 5px; 
+    }
+
+    .gallery .next {
+        right: 5px; 
+    }
+}
