@@ -47,6 +47,7 @@ const Navbar = () => {
     { name: 'Rólunk', path: '/about' },
     { name: 'Partnerek', path: '/partners' },
     { name: 'Hírek', path: '/news' },
+    { name: 'Jótékonyság', path: '/jotekonysag' },
     { name: 'Értékelések', path: '/reviews' },
     { name: 'Kapcsolat', path: '/contact' }
   ];
