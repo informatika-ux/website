@@ -67,166 +67,158 @@ const Jotekonysag = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <div className="relative bg-gradient-to-r from-red-600 via-rose-600 to-pink-600 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}></div>
+    <div className="pt-24 pb-16">
+      <div className="container-custom">
+        {/* Hero Section */}
+        <div className="text-center mb-16" data-aos="fade-up">
+          <div className="flex justify-center mb-6">
+            <div className="bg-blue-500/20 backdrop-blur-sm p-6 rounded-full border border-blue-500/30">
+              <Heart className="w-16 h-16 text-blue-500" />
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+            Jótékonysági <span className="text-blue-500">Tombola</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto text-gray-300">
+            Támogassa a rászoruló gyerekeket!
+          </p>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            Csatlakozzon hozzánk egy különleges eseményre, ahol közösen segíthetünk a rászoruló családok gyermekeinek
+          </p>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <div className="bg-white/20 backdrop-blur-sm p-4 rounded-full">
-                <Heart className="w-16 h-16" />
-              </div>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Jótékonysági Tombola
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto">
-              Támogassa a rászoruló gyerekeket!
-            </p>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              Csatlakozzon hozzánk egy különleges eseményre, ahol közösen segíthetünk a rászoruló családok gyermekeinek
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-red-100 hover:border-red-300 transition-all">
+        {/* Event Details */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16" data-aos="fade-up" data-aos-delay="100">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30 hover:border-blue-500/50 transition-all">
             <div className="flex items-center justify-center mb-4">
-              <div className="bg-red-100 p-4 rounded-full">
-                <Calendar className="w-8 h-8 text-red-600" />
+              <div className="bg-blue-500/20 p-4 rounded-full">
+                <Calendar className="w-8 h-8 text-blue-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-center mb-2 text-gray-900">Időpont</h3>
-            <p className="text-center text-gray-700 font-semibold">{eventDetails.date}</p>
-            <p className="text-center text-gray-600">{eventDetails.time}</p>
+            <h3 className="text-xl font-bold text-center mb-2 text-white">Időpont</h3>
+            <p className="text-center text-gray-300 font-semibold">{eventDetails.date}</p>
+            <p className="text-center text-gray-400">{eventDetails.time}</p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-red-100 hover:border-red-300 transition-all">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30 hover:border-blue-500/50 transition-all">
             <div className="flex items-center justify-center mb-4">
-              <div className="bg-red-100 p-4 rounded-full">
-                <MapPin className="w-8 h-8 text-red-600" />
+              <div className="bg-blue-500/20 p-4 rounded-full">
+                <MapPin className="w-8 h-8 text-blue-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-center mb-2 text-gray-900">Helyszín</h3>
-            <p className="text-center text-gray-700 font-semibold">{eventDetails.location}</p>
+            <h3 className="text-xl font-bold text-center mb-2 text-white">Helyszín</h3>
+            <p className="text-center text-gray-300 font-semibold">{eventDetails.location}</p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-red-100 hover:border-red-300 transition-all">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30 hover:border-blue-500/50 transition-all">
             <div className="flex items-center justify-center mb-4">
-              <div className="bg-red-100 p-4 rounded-full">
-                <Users className="w-8 h-8 text-red-600" />
+              <div className="bg-blue-500/20 p-4 rounded-full">
+                <Users className="w-8 h-8 text-blue-500" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-center mb-2 text-gray-900">Célcsoport</h3>
-            <p className="text-center text-gray-700 font-semibold">Rászoruló gyerekek</p>
+            <h3 className="text-xl font-bold text-center mb-2 text-white">Célcsoport</h3>
+            <p className="text-center text-gray-300 font-semibold">Rászoruló gyerekek</p>
           </div>
         </div>
 
+        {/* Mission and Timeline */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-red-100">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30" data-aos="fade-right">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-red-100 p-3 rounded-full">
-                <Heart className="w-6 h-6 text-red-600" />
+              <div className="bg-blue-500/20 p-3 rounded-full">
+                <Heart className="w-6 h-6 text-blue-500" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">A Projekt Célja</h2>
+              <h2 className="text-3xl font-bold text-white">A Projekt Célja</h2>
             </div>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg text-gray-300 leading-relaxed mb-6">
               Jótékonysági tombolánk célja, hogy olyan családok gyermekeinek segítsünk, akik nehéz körülmények között élnek.
               Szeretnénk biztosítani számukra az alapvető tanulmányi eszközöket, technológiai lehetőségeket, valamint
               támogatni őket abban, hogy egyenlő esélyekkel indulhassanak az életben.
             </p>
-            <div className="bg-red-50 p-6 rounded-xl">
-              <h3 className="font-bold text-xl mb-4 text-red-900">Mire fordítjuk az adományokat?</h3>
+            <div className="bg-gray-900/50 p-6 rounded-xl border border-blue-500/20">
+              <h3 className="font-bold text-xl mb-4 text-blue-400">Mire fordítjuk az adományokat?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <div className="bg-red-200 p-1 rounded-full mt-1">
-                    <Heart className="w-4 h-4 text-red-700" />
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                    <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-700">Iskolai eszközök és tanszerek beszerzése</span>
+                  <span className="text-gray-300">Iskolai eszközök és tanszerek beszerzése</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-red-200 p-1 rounded-full mt-1">
-                    <Heart className="w-4 h-4 text-red-700" />
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                    <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-700">Számítógépek és oktatást segítő technológia</span>
+                  <span className="text-gray-300">Számítógépek és oktatást segítő technológia</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-red-200 p-1 rounded-full mt-1">
-                    <Heart className="w-4 h-4 text-red-700" />
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                    <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-700">Online tanulási platformok hozzáférése</span>
+                  <span className="text-gray-300">Online tanulási platformok hozzáférése</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-red-200 p-1 rounded-full mt-1">
-                    <Heart className="w-4 h-4 text-red-700" />
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                    <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-700">Ruházat és alapvető szükségletek támogatása</span>
+                  <span className="text-gray-300">Ruházat és alapvető szükségletek támogatása</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-red-200 p-1 rounded-full mt-1">
-                    <Heart className="w-4 h-4 text-red-700" />
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                    <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-700">Étkezési támogatás biztosítása</span>
+                  <span className="text-gray-300">Étkezési támogatás biztosítása</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-red-600 to-rose-600 rounded-2xl shadow-xl p-8 text-white">
+          <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/20 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/30" data-aos="fade-left">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full">
-                <Sparkles className="w-6 h-6" />
+              <div className="bg-blue-500/30 p-3 rounded-full">
+                <Sparkles className="w-6 h-6 text-blue-400" />
               </div>
-              <h2 className="text-3xl font-bold">A Projekt Menete</h2>
+              <h2 className="text-3xl font-bold text-white">A Projekt Menete</h2>
             </div>
             <div className="space-y-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5">
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
-                  <h3 className="font-bold text-lg">Tombola Jegyek Értékesítése</h3>
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">1</div>
+                  <h3 className="font-bold text-lg text-white">Tombola Jegyek Értékesítése</h3>
                 </div>
-                <p className="text-white/90 pl-11">
+                <p className="text-gray-300 pl-11">
                   A tombola jegyek értékesítése folyamatosan zajlik az eseményig. Minden egyes jegy vásárlásával
                   hozzájárulsz a rászoruló gyerekek támogatásához.
                 </p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5">
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
-                  <h3 className="font-bold text-lg">Jótékonysági Esemény</h3>
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">2</div>
+                  <h3 className="font-bold text-lg text-white">Jótékonysági Esemény</h3>
                 </div>
-                <p className="text-white/90 pl-11">
-                  <strong>{eventDetails.date}</strong> - Tombola sorsolás a Tamási Áron Művelődési Központban.
+                <p className="text-gray-300 pl-11">
+                  <strong className="text-blue-400">{eventDetails.date}</strong> - Tombola sorsolás a Tamási Áron Művelődési Központban.
                   Családias hangulatban, közös programokkal várjuk a résztvevőket.
                 </p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5">
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
-                  <h3 className="font-bold text-lg">Adomány Átadás</h3>
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">3</div>
+                  <h3 className="font-bold text-lg text-white">Adomány Átadás</h3>
                 </div>
-                <p className="text-white/90 pl-11">
+                <p className="text-gray-300 pl-11">
                   Az eseményt követően a teljes bevétel és az összegyűjtött adományok átadásra kerülnek a
                   rászoruló családoknak és gyerekeknek.
                 </p>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5">
+              <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">4</div>
-                  <h3 className="font-bold text-lg">Folyamatos Támogatás</h3>
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">4</div>
+                  <h3 className="font-bold text-lg text-white">Folyamatos Támogatás</h3>
                 </div>
-                <p className="text-white/90 pl-11">
+                <p className="text-gray-300 pl-11">
                   Követjük a projekt eredményeit és rendszeresen beszámolunk arról, hogyan segítettek az adományok
                   a gyerekek életében.
                 </p>
@@ -235,38 +227,41 @@ const Jotekonysag = () => {
           </div>
         </div>
 
-        <div className="mb-16">
+        {/* Prizes Section */}
+        <div className="mb-16" data-aos="fade-up">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-r from-red-600 to-rose-600 p-4 rounded-full">
-                <Trophy className="w-8 h-8 text-white" />
+              <div className="bg-blue-500/20 p-4 rounded-full border border-blue-500/30">
+                <Trophy className="w-8 h-8 text-blue-500" />
               </div>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nyeremények</h2>
-            <p className="text-xl text-gray-600">Értékes technológiai eszközök és kiegészítők</p>
+            <h2 className="text-4xl font-bold text-white mb-4">Nyeremények</h2>
+            <p className="text-xl text-gray-400">Értékes technológiai eszközök és kiegészítők</p>
           </div>
 
-          <div className="mb-12">
-            <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 rounded-2xl shadow-2xl p-8 text-center border-4 border-yellow-300">
+          {/* Main Prize */}
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="100">
+            <div className="bg-gradient-to-br from-yellow-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 text-center border-2 border-yellow-500/40">
               <div className="flex justify-center mb-4">
-                <Trophy className="w-16 h-16 text-yellow-900" />
+                <Trophy className="w-16 h-16 text-yellow-500" />
               </div>
-              <h3 className="text-3xl font-bold text-yellow-900 mb-4">FŐDÍJ</h3>
+              <h3 className="text-3xl font-bold text-yellow-500 mb-4">FŐDÍJ</h3>
               <div className="max-w-md mx-auto">
                 <img
                   src={prizes[0].image}
                   alt={prizes[0].name}
                   className="w-full h-64 object-cover rounded-xl mb-4 shadow-xl"
                 />
-                <h4 className="text-2xl font-bold text-yellow-900 mb-2">{prizes[0].name}</h4>
-                <p className="text-lg text-yellow-800">{prizes[0].description}</p>
+                <h4 className="text-2xl font-bold text-white mb-2">{prizes[0].name}</h4>
+                <p className="text-lg text-gray-300">{prizes[0].description}</p>
               </div>
             </div>
           </div>
 
+          {/* Secondary Prizes */}
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
             {prizes.slice(1).map((prize) => (
-              <div key={prize.id} className="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-gray-100 hover:border-red-200 transition-all hover:shadow-xl">
+              <div key={prize.id} className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/30 hover:border-blue-500/50 transition-all hover:shadow-xl" data-aos="fade-up" data-aos-delay={prize.id * 50}>
                 <img
                   src={prize.image}
                   alt={prize.name}
@@ -274,33 +269,34 @@ const Jotekonysag = () => {
                 />
                 <div className="p-4">
                   <div className="flex items-center gap-2 mb-2">
-                    <Gift className="w-4 h-4 text-red-600 flex-shrink-0" />
-                    <h4 className="font-bold text-gray-900 text-sm">{prize.name}</h4>
+                    <Gift className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                    <h4 className="font-bold text-white text-sm">{prize.name}</h4>
                   </div>
-                  <p className="text-gray-600 text-xs">{prize.description}</p>
+                  <p className="text-gray-400 text-xs">{prize.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-400 text-lg">
               ...és még sok más értékes technológiai eszköz és kiegészítő!
             </p>
           </div>
         </div>
 
-        <div className="mb-16">
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white text-center">
+        {/* Main Sponsor */}
+        <div className="mb-16" data-aos="fade-up">
+          <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/20 backdrop-blur-sm rounded-2xl p-8 text-center border border-blue-500/30">
             <div className="flex justify-center mb-4">
-              <div className="bg-white/20 backdrop-blur-sm p-4 rounded-full">
-                <Building2 className="w-12 h-12" />
+              <div className="bg-blue-500/30 p-4 rounded-full">
+                <Building2 className="w-12 h-12 text-blue-400" />
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-4">Fő Támogató</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Fő Támogató</h2>
             <div className="max-w-2xl mx-auto">
-              <h3 className="text-4xl font-bold mb-4">EU-Tech Informatika Kft.</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <h3 className="text-4xl font-bold mb-4 text-blue-400">EU-Tech Informatika Kft.</h3>
+              <p className="text-lg text-gray-300 leading-relaxed">
                 Büszkén támogatjuk ezt a jótékonysági kezdeményezést. Cégünk elkötelezett amellett, hogy segítse
                 a helyi közösséget és lehetőséget biztosítson azoknak a gyerekeknek, akiknek a legnagyobb szükségük van rá.
                 A technológia nemcsak üzletünk, hanem hivatásunk is - hiszünk abban, hogy minden gyerek megérdemli a
@@ -310,48 +306,52 @@ const Jotekonysag = () => {
           </div>
         </div>
 
-        <div className="mb-16">
+        {/* Donors */}
+        <div className="mb-16" data-aos="fade-up">
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-r from-green-600 to-emerald-600 p-4 rounded-full">
-                <Heart className="w-8 h-8 text-white" />
+              <div className="bg-blue-500/20 p-4 rounded-full border border-blue-500/30">
+                <Heart className="w-8 h-8 text-blue-500" />
               </div>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Támogatóink és Adományozók</h2>
-            <p className="text-xl text-gray-600">Köszönjük minden támogatónknak, aki hozzájárult a projekt sikeréhez!</p>
+            <h2 className="text-4xl font-bold text-white mb-4">Támogatóink és Adományozók</h2>
+            <p className="text-xl text-gray-400">Köszönjük minden támogatónknak, aki hozzájárult a projekt sikeréhez!</p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-100">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30">
             <div className="grid md:grid-cols-2 gap-6">
               {donors.map((donor, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border-l-4 border-green-500 hover:shadow-md transition-all"
+                  className="bg-gradient-to-r from-blue-500/10 to-blue-600/10 rounded-xl p-6 border-l-4 border-blue-500 hover:shadow-md transition-all"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 50}
                 >
                   <div className="flex items-start gap-4">
-                    <div className="bg-green-100 p-2 rounded-full mt-1">
-                      <Heart className="w-5 h-5 text-green-600" />
+                    <div className="bg-blue-500/20 p-2 rounded-full mt-1">
+                      <Heart className="w-5 h-5 text-blue-500" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-lg text-gray-900 mb-1">{donor.name}</h3>
-                      <p className="text-gray-600">{donor.type}</p>
+                      <h3 className="font-bold text-lg text-white mb-1">{donor.name}</h3>
+                      <p className="text-gray-400">{donor.type}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 text-center p-6 bg-gradient-to-r from-green-100 to-emerald-100 rounded-xl">
-              <p className="text-lg text-gray-700 font-semibold">
+            <div className="mt-8 text-center p-6 bg-gradient-to-r from-blue-500/10 to-blue-600/10 rounded-xl border border-blue-500/20">
+              <p className="text-lg text-gray-300 font-semibold">
                 Köszönjük minden támogatónk nagylelkűségét! Az Önök segítségével valóra válthatjuk ezt a nemes célt.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl shadow-xl p-8 text-white">
+        {/* CTA Section */}
+        <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30" data-aos="fade-up">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Csatlakozz Te is!</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Csatlakozz Te is!</h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Ha Te is szeretnél részt venni ebben a jótékonysági projektben, akár tombolajegy vásárlással,
               akár adománnyal, vagy szeretnél többet megtudni a kezdeményezésről, kérjük vedd fel velünk a kapcsolatot!
@@ -359,17 +359,17 @@ const Jotekonysag = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
-              <h3 className="font-bold text-xl mb-4">Elérhetőségek</h3>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700/30">
+              <h3 className="font-bold text-xl mb-4 text-white">Elérhetőségek</h3>
               <div className="space-y-3 text-gray-300">
-                <p><strong className="text-white">Telefon:</strong> +36 30 123 4567</p>
-                <p><strong className="text-white">Email:</strong> info@eu-tech.hu</p>
-                <p><strong className="text-white">Cím:</strong> EU-Tech Informatika Kft.</p>
+                <p><strong className="text-blue-400">Telefon:</strong> +36 30 123 4567</p>
+                <p><strong className="text-blue-400">Email:</strong> info@eu-tech.hu</p>
+                <p><strong className="text-blue-400">Cím:</strong> EU-Tech Informatika Kft.</p>
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
-              <h3 className="font-bold text-xl mb-4">Támogatási Lehetőségek</h3>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700/30">
+              <h3 className="font-bold text-xl mb-4 text-white">Támogatási Lehetőségek</h3>
               <ul className="space-y-2 text-gray-300 text-left">
                 <li>• Tombola jegy vásárlás</li>
                 <li>• Pénzbeli adomány</li>
@@ -381,8 +381,8 @@ const Jotekonysag = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-xl font-semibold text-white">
-              Együtt többet tehetünk! Minden kis segítség számít! ❤️
+            <p className="text-xl font-semibold text-blue-400">
+              Együtt többet tehetünk! Minden kis segítség számít!
             </p>
           </div>
         </div>
