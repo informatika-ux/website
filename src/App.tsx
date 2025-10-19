@@ -22,6 +22,7 @@ import SalesDetail from './pages/SalesDetail';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Cookies from './pages/Cookies';
+import Jotekonysag from './pages/Jotekonysag';
 
 // Service Pages
 import Networking from './pages/services/Networking';
@@ -62,6 +63,7 @@ function App() {
               <Route path="/news/:slug" element={<NewsDetail />} />
               <Route path="/works" element={<Works />} />
               <Route path="/reviews" element={<Reviews />} />
+              <Route path="/jotekonysag" element={<Jotekonysag />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/cookies" element={<Cookies />} />
