@@ -63,7 +63,7 @@ const Jotekonysag = () => {
   const eventDetails = {
     date: '2025. december 13.',
     location: 'Tamási Áron Művelődési Központ',
-    time: '14:00 óra'
+    time: '10:00 óra'
   };
 
   return (
