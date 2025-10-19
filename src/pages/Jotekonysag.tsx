@@ -7,7 +7,7 @@ const Jotekonysag = () => {
       id: 1,
       name: 'Laptop',
       description: 'Modern laptop teljes konfigurációval',
-      image: '/images/sale-business-laptop.jpg',
+      image: '/images/dell.png',
       type: 'main'
     },
     {
