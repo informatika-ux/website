@@ -293,13 +293,13 @@ const Jotekonysag = () => {
                 <Building2 className="w-12 h-12 text-blue-400" />
               </div>
             </div>
-            <h2 className="text-3xl font-bold mb-4 text-white">Fő Támogató</h2>
+            <h2 className="text-3xl font-bold mb-4 text-white">Szervező</h2>
             <div className="max-w-2xl mx-auto">
               <h3 className="text-4xl font-bold mb-4 text-blue-400">EU-Tech Informatika Kft.</h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Büszkén támogatjuk ezt a jótékonysági kezdeményezést. Cégünk elkötelezett amellett, hogy segítse
+                Büszkén mutatjuk be ezt a jótékonysági kezdeményezést. Cégünk elkötelezett amellett, hogy segítse
                 a helyi közösséget és lehetőséget biztosítson azoknak a gyerekeknek, akiknek a legnagyobb szükségük van rá.
-                A technológia nemcsak üzletünk, hanem hivatásunk is - hiszünk abban, hogy minden gyerek megérdemli a
+                A technológia nemcsak üzletünk, hanem hivatásunk is - hiszünk abban, hogy minden gyermek megérdemli a
                 lehetőséget, hogy megismerje és használja a modern technológiát.
               </p>
             </div>
@@ -362,9 +362,9 @@ const Jotekonysag = () => {
             <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700/30">
               <h3 className="font-bold text-xl mb-4 text-white">Elérhetőségek</h3>
               <div className="space-y-3 text-gray-300">
-                <p><strong className="text-blue-400">Telefon:</strong> +36 30 123 4567</p>
-                <p><strong className="text-blue-400">Email:</strong> info@eu-tech.hu</p>
-                <p><strong className="text-blue-400">Cím:</strong> EU-Tech Informatika Kft.</p>
+                <p><strong className="text-blue-400">Telefon:</strong> +36 20 414 5561</p>
+                <p><strong className="text-blue-400">Email:</strong> informatika@eu-tech.hu</p>
+                <p><strong className="text-blue-400">Cím:</strong> Eu-Tech Informatika Kft.</p>
               </div>
             </div>
 
