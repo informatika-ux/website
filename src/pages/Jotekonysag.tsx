@@ -163,103 +163,103 @@ const Jotekonysag = () => {
         </div>
 
         {/* Mission and Timeline */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30" data-aos="fade-right">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30 flex flex-col" data-aos="fade-right">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-blue-500/20 p-3 rounded-full">
+              <div className="bg-blue-500/20 p-3 rounded-full flex-shrink-0">
                 <Heart className="w-6 h-6 text-blue-500" />
               </div>
-              <h2 className="text-3xl font-bold text-white">A Projekt Célja</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">A Projekt Célja</h2>
             </div>
-            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6">
               Jótékonysági tombolánk célja, hogy olyan családok gyermekeinek segítsünk, akik nehéz körülmények között élnek.
               Szeretnénk biztosítani számukra az alapvető tanulmányi eszközöket, technológiai lehetőségeket, valamint
               támogatni őket abban, hogy egyenlő esélyekkel indulhassanak az életben.
             </p>
-            <div className="bg-gray-900/50 p-6 rounded-xl border border-blue-500/20">
-              <h3 className="font-bold text-xl mb-4 text-blue-400">Mire fordítjuk az adományokat?</h3>
+            <div className="bg-gray-900/50 p-6 rounded-xl border border-blue-500/20 flex-grow">
+              <h3 className="font-bold text-lg md:text-xl mb-4 text-blue-400">Mire fordítjuk az adományokat?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1 flex-shrink-0">
                     <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-300">Iskolai eszközök és tanszerek beszerzése</span>
+                  <span className="text-gray-300 text-sm md:text-base">Iskolai eszközök és tanszerek beszerzése</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1 flex-shrink-0">
                     <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-300">Számítógépek és oktatást segítő technológia</span>
+                  <span className="text-gray-300 text-sm md:text-base">Számítógépek és oktatást segítő technológia</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1 flex-shrink-0">
                     <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-300">Online tanulási platformok hozzáférése</span>
+                  <span className="text-gray-300 text-sm md:text-base">Online tanulási platformok hozzáférése</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1 flex-shrink-0">
                     <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-300">Ruházat és alapvető szükségletek támogatása</span>
+                  <span className="text-gray-300 text-sm md:text-base">Ruházat és alapvető szükségletek támogatása</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-blue-500/20 p-1 rounded-full mt-1">
+                  <div className="bg-blue-500/20 p-1 rounded-full mt-1 flex-shrink-0">
                     <Heart className="w-4 h-4 text-blue-500" />
                   </div>
-                  <span className="text-gray-300">Étkezési támogatás biztosítása</span>
+                  <span className="text-gray-300 text-sm md:text-base">Étkezési támogatás biztosítása</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/20 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/30" data-aos="fade-left">
+          <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/20 backdrop-blur-sm rounded-2xl p-8 border border-blue-500/30 flex flex-col" data-aos="fade-left">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-blue-500/30 p-3 rounded-full">
+              <div className="bg-blue-500/30 p-3 rounded-full flex-shrink-0">
                 <Sparkles className="w-6 h-6 text-blue-400" />
               </div>
-              <h2 className="text-3xl font-bold text-white">A Projekt Menete</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-white">A Projekt Menete</h2>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-5 flex-grow">
               <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">1</div>
-                  <h3 className="font-bold text-lg text-white">Tombola Jegyek Értékesítése</h3>
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400 flex-shrink-0">1</div>
+                  <h3 className="font-bold text-base md:text-lg text-white">Tombola Jegyek Értékesítése</h3>
                 </div>
-                <p className="text-gray-300 pl-11">
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                   A tombola jegyek értékesítése folyamatosan zajlik az eseményig. Minden egyes jegy vásárlásával
                   hozzájárulsz a rászoruló gyerekek támogatásához.
                 </p>
               </div>
 
               <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">2</div>
-                  <h3 className="font-bold text-lg text-white">Jótékonysági Esemény</h3>
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400 flex-shrink-0">2</div>
+                  <h3 className="font-bold text-base md:text-lg text-white">Jótékonysági Esemény</h3>
                 </div>
-                <p className="text-gray-300 pl-11">
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                   <strong className="text-blue-400">{eventDetails.date}</strong> - Tombola sorsolás a Tamási Áron Művelődési Központban.
                   Családias hangulatban, közös programokkal várjuk a résztvevőket.
                 </p>
               </div>
 
               <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">3</div>
-                  <h3 className="font-bold text-lg text-white">Adomány Átadás</h3>
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400 flex-shrink-0">3</div>
+                  <h3 className="font-bold text-base md:text-lg text-white">Adomány Átadás</h3>
                 </div>
-                <p className="text-gray-300 pl-11">
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                   Az eseményt követően a teljes bevétel és az összegyűjtött adományok átadásra kerülnek a
                   rászoruló családoknak és gyerekeknek.
                 </p>
               </div>
 
               <div className="bg-gray-900/30 backdrop-blur-sm rounded-xl p-5 border border-gray-700/30">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400">4</div>
-                  <h3 className="font-bold text-lg text-white">Folyamatos Támogatás</h3>
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="bg-blue-500/30 w-8 h-8 rounded-full flex items-center justify-center font-bold text-blue-400 flex-shrink-0">4</div>
+                  <h3 className="font-bold text-base md:text-lg text-white">Folyamatos Támogatás</h3>
                 </div>
-                <p className="text-gray-300 pl-11">
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                   Követjük a projekt eredményeit és rendszeresen beszámolunk arról, hogyan segítettek az adományok
                   a gyerekek életében.
                 </p>
