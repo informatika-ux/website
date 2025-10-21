@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Gift, Calendar, MapPin, Users, Building2, Trophy, Sparkles } from 'lucide-react';
+import { Heart, Gift, Calendar, MapPin, Users, Building2, Trophy, Sparkles, Gamepad2 } from 'lucide-react';
 
 const Jotekonysag = () => {
   const prizes = [
@@ -85,6 +85,47 @@ const Jotekonysag = () => {
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Csatlakozzon hozzánk egy különleges eseményre, ahol közösen segíthetünk a rászoruló családok gyermekeinek
           </p>
+        </div>
+
+        {/* Gamer Zona Highlight */}
+        <div className="mb-16" data-aos="fade-up" data-aos-delay="50">
+          <div className="bg-gradient-to-br from-green-600/20 to-emerald-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-green-500/40">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="bg-green-500/30 p-4 rounded-full">
+                <Gamepad2 className="w-12 h-12 text-green-400" />
+              </div>
+              <h2 className="text-4xl font-bold text-green-400">GAMER ZÓNA</h2>
+            </div>
+            <div className="text-center max-w-4xl mx-auto">
+              <p className="text-2xl text-white font-bold mb-6">
+                Különleges játékélmény vár minden látogatót!
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 mb-6">
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-400 mb-2">3x</div>
+                  <div className="text-xl text-white font-semibold">Xbox Konzol</div>
+                  <p className="text-gray-300 mt-2">Legújabb játékokkal</p>
+                </div>
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-400 mb-2">1x</div>
+                  <div className="text-xl text-white font-semibold">PlayStation 4</div>
+                  <p className="text-gray-300 mt-2">Klasszikus játékok</p>
+                </div>
+                <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
+                  <div className="text-4xl font-bold text-green-400 mb-2">1x</div>
+                  <div className="text-xl text-white font-semibold">Gaming PC</div>
+                  <p className="text-gray-300 mt-2">Teljes élmény</p>
+                </div>
+              </div>
+              <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/20">
+                <p className="text-xl text-gray-200 leading-relaxed">
+                  <span className="text-green-400 font-bold">INGYENES JÁTÉK</span> az esemény teljes időtartama alatt!
+                  Gyerekek és felnőttek egyaránt kipróbálhatják a konzolokat és a gaming PC-t.
+                  Várunk mindenkit szeretettel a Gamer Zónába!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Event Details */}
